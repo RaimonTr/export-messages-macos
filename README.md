@@ -38,7 +38,7 @@ Si aparece un error de permisos al abrir "chat.db", hay que dar Acceso total al 
 
 ## Uso
 
-Ejecutar: ```python3 exportar_imessages.py```
+Ejecutar: ```python3 export-messages-macos.py```
 
 El script listará las conversaciones disponibles y preguntará cuál exportar.
 
