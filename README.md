@@ -1,6 +1,6 @@
-# exportar-imessages-macos
+# export-messages-macos
 
-Script interactivo para exportar conversaciones de Mensajes/iMessage en macOS a un HTML imprimible, incluyendo texto e imágenes adjuntas cuando están disponibles localmente.
+Script interactivo para exportar conversaciones de Mensajes/Messages en macOS a un HTML imprimible, incluyendo texto e imágenes adjuntas cuando están disponibles localmente.
 
 ## Qué hace
 
@@ -29,7 +29,7 @@ macOS con:
 - Python 3
 - SQLite disponible en el sistema
 - Swift disponible en el sistema
-- La conversación sincronizada localmente en la app Mensajes/iMessage
+- La conversación sincronizada localmente en la app Mensajes/Messages
 - Acceso total al disco para la app de terminal usada
 
 Si aparece un error de permisos al abrir "chat.db", hay que dar Acceso total al disco a Terminal, iTerm u otra app de terminal:
