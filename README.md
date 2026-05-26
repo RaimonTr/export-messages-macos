@@ -61,7 +61,7 @@ Ejecutar: ```python3 export-messages-macos.py```
 
 El script listará las conversaciones disponibles y preguntará cuál exportar.
 
-Al terminar generará archivos en "~/Downloads", por ejemplo:
+Al terminar generará archivos en "~/Descargas", por ejemplo:
 
 iMessages_Apple_YYYYMMDD_HHMMSS.html
 
