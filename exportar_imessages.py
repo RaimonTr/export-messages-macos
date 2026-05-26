@@ -4,10 +4,6 @@
 """
 Exportador interactivo de conversaciones de Mensajes/iMessage en macOS a HTML imprimible.
 
-Versión v2 portable/anonimizada:
-- No contiene usuarios/rutas personales hardcodeadas.
-- Usa Path.home() y ~/Library/Messages/chat.db.
-- En el HTML generado no escribe rutas absolutas tipo /Users/usuario/...
 - Primero intenta usar message.text.
 - Si message.text está vacío, decodifica message.attributedBody usando Swift para conservar UTF-8 y acentos.
 - Copia imágenes/adjuntos a una carpeta junto al HTML y usa rutas relativas.
@@ -492,7 +488,7 @@ def export_chat(chat: Chat) -> tuple[Path, Path, Path, dict[str, int]]:
 def main() -> None:
     print("Exportador interactivo de Mensajes/iMessage a HTML imprimible")
     print("No modifica chat.db. No borra nada. Crea archivos nuevos en ~/Downloads.")
-    print("Versión v2: portable, sin rutas personales en el HTML, message.text + attributedBody.\n")
+    print("Versión v2: portable, HTML, message.text + attributedBody.\n")
 
     check_requirements()
 
