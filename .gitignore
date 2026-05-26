@@ -1,0 +1,12 @@
+.DS_Store
+__pycache__/
+*.pyc
+
+# Exportaciones generadas por el script
+iMessages_*.html
+iMessages_*_imagenes/
+iMessages_*_tmp/
+
+# Entornos locales opcionales
+.venv/
+venv/
