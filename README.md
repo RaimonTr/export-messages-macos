@@ -1,6 +1,10 @@
 # export-messages-macos
 
-Script interactivo para exportar conversaciones de Mensajes/Messages en macOS a un HTML imprimible, incluyendo texto e imágenes adjuntas cuando están disponibles localmente.
+Script interactivo para exportar conversaciones de Mensajes/Messages en macOS a un HTML imprimible, incluyendo texto e imágenes adjuntas cuando estén disponibles localmente.
+
+## Antes de empezar
+
+Para forzar a Mensajes a que descargue una conversación entera (o lo máximo que pueda recuperar), navega al inicio de la conversación, al primer mensaje de todos. Con esto conseguirás que se descarguen localmente los archivos.
 
 ## Qué hace
 
@@ -57,11 +61,11 @@ Si aparece un error de permisos al abrir `chat.db`, hay que dar Acceso total al 
 Busca la app correspondiente y actívala.
 ## Uso
 
-Ejecutar: ```python3 export-messages-macos.py```
+Para ejecutarlo, en la Terminal: ```python3 export-messages-macos.py```
 
 El script listará las conversaciones disponibles y preguntará cuál exportar.
 
-Al terminar generará los archivos en la carpeta Descargas (`~/Downloads` en Terminal), por ejemplo:
+Al terminar creará los archivos en la carpeta Descargas (`~/Downloads` en Terminal), por ejemplo:
 
 iMessages_Apple_YYYYMMDD_HHMMSS.html
 
@@ -77,12 +81,12 @@ Para crear el PDF:
 
 ## Privacidad
 
-El script se ejecuta localmente. La conversación exportada puede contener datos personales, teléfonos, imágenes, direcciones, números de seguimiento u otra información sensible. Revisa el HTML/PDF antes de compartirlo.
+El script se ejecuta de forma local en tu ordenador. La conversación exportada puede contener datos personales, teléfonos, imágenes, direcciones, números de seguimiento u otra información sensible. Revisa el HTML/PDF antes de compartirlo.
 
 ## Limitaciones
 
-- Solo exporta lo que esté disponible localmente en el Mac.
-- Si Mensajes no ha descargado todo el historial o ciertos adjuntos, esos elementos pueden faltar.
+- Sólo exporta lo que esté disponible localmente en el Mac.
+- Si Mensajes no ha descargado todo el historial o ciertos adjuntos, esos elementos pueden faltar. Asegúrate de ir al inicio de la conversación que quieres exportar para forzar a Mensajes a que descargue todo. 
 - Algunos adjuntos que no sean imagen pueden copiarse como archivo, pero no se incrustan visualmente en el HTML.
 - El formato generado es práctico para lectura e impresión, no una réplica exacta de la interfaz de Mensajes.
 
